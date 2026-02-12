@@ -1,2 +1,5 @@
 # texas-aerial-robotics
-Rotorcraft dynamics modeling, feedback control, sensing, state estimation, path planning, computer vision, and decision-making under uncertainty.
+
+## Software Engineering at the Texas Aerial Robotics Lab
+
+A detailed overview can be found [here](https://aaronpandian.com/aerial-robotics/).
