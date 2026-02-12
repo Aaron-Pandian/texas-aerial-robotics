@@ -6,30 +6,14 @@
 #include "polynomial_sampler.h"
 #include "gnuplot-iostream.h"
 
-///////////////////////////////////////////////////////////////////
-// FUNCTION PROTOTYPES
-// DO NOT MODIFY
-///////////////////////////////////////////////////////////////////
-// void Example();
-// void DerivativeExperiments();
-// void ArrivalTimeExperiments();
 void NumWaypointExperiments();
 
-///////////////////////////////////////////////////////////////////
-// MAIN FUNCTION
-// TODO: UNCOMMENT THE FUNCTIONS YOU WANT TO RUN
-///////////////////////////////////////////////////////////////////
 int main(int argc, char** argv) {
-  // Example();
-  // DerivativeExperiments();
-  // ArrivalTimeExperiments();
   NumWaypointExperiments();
 
   return EXIT_SUCCESS;
 }
 
-// Example function that demonstrates how to use the polynomial solver. This
-// example creates waypoints in a triangle: (0,0) -- (1,0) -- (1,1) -- (0,0)
 void Example() {
   // Time in seconds
   const std::vector<double> times = {0,1,2,3};
