@@ -40,25 +40,8 @@ int main(int argc, char** argv) {
   // Transform an occupancy grid into a graph
   const Graph2D graph = occupancy_grid.AsGraph();
 
-  /////////////////////////////////////////////////////////////////////////////
-  // RUN A STAR
-  // TODO: Run your A* implementation over the graph and nodes defined above.
-  //       This section is intended to be more free-form. Using previous
-  //       problems and examples, determine the correct commands to complete
-  //       this problem. You may want to take advantage of some of the plotting
-  //       and graphing utilities in previous problems to check your solution on
-  //       the way.
-  /////////////////////////////////////////////////////////////////////////////
-
   auto path_info_ret = RunAStar(graph, &occupancy_grid, start_node, end_node);
   auto node_path = path_info_ret.path;
-  
-  /////////////////////////////////////////////////////////////////////////////
-  // RUN THE POLYNOMIAL PLANNER
-  // TODO: Convert the A* solution to a problem the polynomial solver can
-  //       solve. Solve the polynomial problem, sample the solution, figure out
-  //       a way to export it to Matlab.
-  /////////////////////////////////////////////////////////////////////////////
 
   // Find the number of waypoints
   int N = node_path.size();
